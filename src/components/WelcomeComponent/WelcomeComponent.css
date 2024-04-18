@@ -1,0 +1,128 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #fe0404;
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+.container {
+  position: absolute;
+  top: 20%; /* Ajuste la distancia desde la parte superior según su preferencia */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center; /* Alineación centrada */
+}
+
+table {
+  display: inline-block; /* Hace que la tabla se ajuste al tamaño del contenido */
+  width: auto; /* Ancho automático basado en el contenido */
+  border-collapse: collapse;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  text-align: center; /* Alineación centrada */
+}
+
+th {
+  text-align: center; /* Alineación centrada */
+}
+
+thead th {
+  background-color: #0095ff;
+}
+
+tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+td {
+  position: relative;
+}
+
+td:hover:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -9999px;
+  bottom: -9999px;
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: -1;
+}
+
+.welcome-message {
+  font-size: 30px; /* Ajuste el tamaño del mensaje de bienvenida */
+  color: #20507f7b;
+  font-weight: bold;
+  margin-bottom: 30px; /* Espacio entre el mensaje de bienvenida y la tabla */
+}
+.my-button {
+  padding: 10px 20px;
+  background-color: #2340b6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.my-button:hover {
+  background-color: #0ab5c4;
+}
+
+.my-button:active {
+  background-color: #00eaff;
+}
+.table-container {
+  margin-top: 100px; /* Ajusta este valor según sea necesario */
+}
+  .texto-bienvenida {
+      text-align: center;
+      color: #ffffff;
+      font-size: 30px; /* Tamaño de letra más grande */
+      font-weight: bold; /* Letra en negritas */
+  
+}
+.delete {
+  padding: 10px 20px;
+  background-color: #b62323;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.edit {
+  padding: 10px 20px;
+  background-color: #2360b6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.out {
+  padding: 8px 20px;
+  background-color: #FB845C;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.cali {
+  padding: 8px 20px;
+  background-color: #3F6765;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
